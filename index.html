@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <title>BarbersClub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" 
+    rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body data-bs-theme="light">
+
+  <header>
+    <nav class="navbar-expand-lg navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./assets/logo-barber.png" width="70px" alt="Logo Barbearia"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./assets/logo-mobile.png" alt="Logo da barbearia"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                    <label class="form-check-label" for="modo-noturno">Modo noturno</label>
+                  </div></a>
+              </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+      <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
+        <div class="banners-titulo bg-body-secondary py-5">
+          <h2 class="fw-bold">Sua autoestima renovada em minutos!</h2>
+          <p>Boas-vindas a BarbersClub. Aqui você encontrará o melhor papo, melhor corte e um ambiente onde você pode ser mais você</p>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <h2 class="text-center fw-bold pb-1">Nossos serviços</h2>
+
+        <div class="container d-flex justify-content-around flex-wrap">
+
+          <div class="card m-4" style="width: 20rem;">
+            <img src="./assets/cabelo.jpg" class="card-img-top"
+              alt="Imagem corte de cabelo sendo feito">
+            <div class="card-body">
+              <h5 class="card-title py-2 fw-bold">Corte</h5>
+              <p class="card-text">Com precisão cirúrgica e atenção aos detalhes, nós transformamos o ordinário em extraordinário. Cada linha, 
+                cada contorno, é cuidadosamente considerado para garantir que você saia daqui não apenas com um corte de cabelo, 
+                mas com uma obra-prima sobre sua cabeça.</p>
+
+            </div>
+          </div>
+
+          <div class="card m-4" style="width: 20rem;">
+            <img src="./assets/sobrancelha.jpg" class="card-img-top" alt="Navalha sendo mostrada">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Sobrancelha</h5>
+              <p class="card-text">Com precisão cirúrgica e atenção aos detalhes, nós transformamos o ordinário em extraordinário. Cada linha, cada contorno, 
+                é cuidadosamente considerado para garantir que você saia daqui não apenas com uma sobrancelha, 
+                mas com uma obra-prima sobre seus olhos.
+              </p>
+            </div>
+          </div>
+
+          <div class="card m-4" style="width: 20rem;">
+            <img src="./assets/barba.jpg" class="card-img-top" alt="Barba sendo mostrada por cliente">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Barba</h5>
+              <p class="card-text">Com precisão cirúrgica e atenção aos detalhes, nós transformamos o ordinário em extraordinário. Cada linha, cada contorno, 
+                é cuidadosamente considerado para garantir que você saia daqui não apenas com uma barba, 
+                mas com uma obra-prima desenhada em seu rosto.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="banners banner-2 d-flex flex-column justify-content-center">
+        <div class="banners-titulo bg-body-secondary text-center py-5">
+          <h2 class="fw-bold">Portas abertas para todos os públicos.</h2>
+          <p>Imagine-se relaxando em uma cadeira de couro, enquanto nossos talentosos mestres barbeiros trabalham sua magia. 
+            Cada corte é uma expressão única de sua personalidade, 
+            uma declaração ousada de sua individualidade.</p>
+        </div>
+      </section>
+
+      <section class="py-5">
+
+        <h2 class="fw-bold text-center pb-1">Nossos produtos</h2>
+        
+        <div class="row mx-0">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-1"
+                    style="width: 18rem;">
+                    <img src="./assets/gel.png" class="card-img-top" alt="Gel de cabelo">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">Gel de cabelo</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-2"
+                    style="width: 18rem;">
+                    <img src="./assets/pente de cabelo.png" class="card-img-top" alt="Pente para cabelo">
+                    <div class="card-body">
+                        <h3 class="card-text fw-bold text-center">Pente para cabelo</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" style="width: 18rem;">
+                    <img src="./assets/Tesoura.png" class="card-img-top" alt="Tesoura">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold text-nowrap">Tesoura</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" style="width: 18rem;">
+                    <img src="./assets/navalha.png" class="card-img-top" alt="Navalha">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">Navalha</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" style="width: 18rem;">
+                    <img src="./assets/espuma de barbear.png" class="card-img-top" alt="Espuma para barbear">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">Espuma para barbear</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto btn" style="width: 18rem;">
+                    <img src="./assets/produtos para cabelo.png" class="card-img-top" alt="Produtos para crescimento de cabelo">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">Loção Capilar</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="sobre" class="banners banner-3 d-flex flex-column justify-content-center">
+        <div class="banners-titulo bg-body-secondary text-center py-5 fw-bold">
+          <h2 class="fw-bold">Sobre</h2>
+          <p>👨🏻‍🦰 Desde o nosso modesto início em 2010, a BarbersClub tem sido um farol de elegância masculina e excelência no cuidado pessoal. Fundada com uma paixão ardente pela arte da barbearia,<br>nossa missão é oferecer mais do que simplesmente cortes de cabelo e barba - é sobre proporcionar uma experiência transformadora.<br>
+            <br>
+            ✂️ Desde cortes clássicos até as últimas tendências da moda masculina, nossos barbeiros são artesãos dedicados,<br>comprometidos em oferecer resultados impecáveis em cada visita. Cada corte é uma expressão de sua personalidade, meticulosamente executada com precisão e cuidado.<br>
+            <br>
+          </div>
+      </section>
+
+      <section class="py-4 container">
+        <div class="row">
+          <div class="col-10 col-xl-8 mx-auto">
+            <div class="border border-2 rounded p-3">
+              <h3 class="fw-bold p-3">Entre em contato!</h3>
+              <form id="contato">
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingNome" placeholder="Nome">
+                  <label for="floatingNome">Nome</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                  <label for="floatingEmail">Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input type="number" class="form-control" id="floatingTelefone" placeholder="Telefone">
+                  <label for="floatingTelefone">Telefone</label>
+                </div>
+                <select class="form-select mb-3" aria-label="Default select example">
+                  <option selected>Preferência de contato:</option>
+                  <option value="1">WhatsApp</option>
+                  <option value="2">Email</option>
+                  <option value="3">Ligação</option>
+                </select>
+                <label for="nivel-satisfacao" class="form-label">Nível de satisfação:</label>
+                <input type="range" class="form-range input-range" id="nivel-satisfacao">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Deseja receber novidades por email?
+                  </label>
+                </div>
+                <button type="button" class="btn botao-padrao w-100 fw-bold mt-3 py-3">Enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <footer class="text-center">
+        <section class="container p-4 pb-0 mb-4">
+          <a class="btn" href="#!"><i class="bi bi-whatsapp"></i></a>
+          <a class="btn" href="#!"><i class="bi bi-instagram"></i></a>
+          <a class="btn" href="#!"><i class="bi bi-twitter"></i></a>
+        </section>
+        <div class="p-3">
+            2024 <i class="bi bi-c-circle"></i> Desenvolvido por Matheus | Projeto fictício para portifolio
+        </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
